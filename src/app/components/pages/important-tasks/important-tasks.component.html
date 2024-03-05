@@ -1,0 +1,5 @@
+<app-page-title></app-page-title>
+<h1 class="font-bold text-2xl mt-4">Mmhmm, These seems to some Important Tasks that you should prioritize:</h1>
+<div class="flex flex-col mt-6">
+    <app-task-list [taskList]="taskList" (complete)="onComplete($event)" (important)="onImportant($event)"></app-task-list>
+  </div>
